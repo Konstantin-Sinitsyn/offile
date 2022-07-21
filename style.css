@@ -247,6 +247,9 @@ body {
 .screen.active {
     margin-top: -100vh;
 }
+.screen.active ~ .page{
+    display: block;
+}
 
 .screen__wrapper {}
 
@@ -381,11 +384,105 @@ body {
 }
 
 /*--Page--*/
+.page {
+    /*display: none;*/
+    background-color: rgba(230, 228, 228, 0.25);
+}
 
-.page {}
+.page__wrapper {}
+
+.page__body {
+    padding-top: 8%;
+}
+
+.page__body-status {
+    background-color: rgb(201, 9, 9);
+    border-radius: 15px;
+    color: #fff;
+    padding: 5px 15px;
+    -webkit-box-shadow: 5px 5px 12px 0px rgba(28, 193, 0, 0.6);
+    -moz-box-shadow: 5px 5px 12px 0px rgba(28, 193, 0, 0.6);
+    box-shadow: 5px 5px 12px 0px rgba(193, 0, 0, 0.6);
+}
+
 .page__title {}
-.page__image {
+
+.page__title>span {
+    color: #fff;
+    background-color: rgb(93, 91, 91);
+}
+
+.page__description {
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 153%;
+}
+
+.article {
+    font-family: 'Raleway';
+    font-weight: 400;
+    padding-bottom: 25px;
+}
+
+.article__title {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 56px;
+    margin-bottom: 10px;
+}
+
+.article__subtitle {
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 21px;
+    color: #000000;
+    opacity: 0.75;
+}
+
+.article__text {
+    font-size: 1.125rem;
+    line-height: 160%;
+}
+
+.article__link {
+    font-size: 1.125rem;
+    color: #000000;
+    opacity: 0.75;
+}
+
+/*--Banner--*/
+.banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: 70px;
+    background-color: rgb(73, 69, 69);
+    -webkit-box-shadow: 0px -18px 30px -10px rgba(81, 85, 88, 0.36);
+    -moz-box-shadow: 0px -18px 30px -10px rgba(81, 85, 88, 0.36);
+    box-shadow: 0px -18px 30px -10px rgba(81, 85, 88, 0.36);
+}
+
+.banner__close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.banner__content {
+    padding-right: 40px;
+}
+
+.banner__text{
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
 }
