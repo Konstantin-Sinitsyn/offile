@@ -247,11 +247,10 @@ body {
 .screen.active {
     margin-top: -100vh;
 }
-.screen.active ~ .page{
+
+.screen.active~.page {
     display: block;
 }
-
-.screen__wrapper {}
 
 .screen__header {
     padding: 25px 0;
@@ -385,11 +384,9 @@ body {
 
 /*--Page--*/
 .page {
-    /*display: none;*/
+    display: none;
     background-color: rgba(230, 228, 228, 0.25);
 }
-
-.page__wrapper {}
 
 .page__body {
     padding-top: 8%;
@@ -404,8 +401,6 @@ body {
     -moz-box-shadow: 5px 5px 12px 0px rgba(28, 193, 0, 0.6);
     box-shadow: 5px 5px 12px 0px rgba(193, 0, 0, 0.6);
 }
-
-.page__title {}
 
 .page__title>span {
     color: #fff;
@@ -480,7 +475,7 @@ body {
     padding-right: 40px;
 }
 
-.banner__text{
+.banner__text {
     color: #fff;
     font-weight: 700;
     font-size: 1.5rem;
